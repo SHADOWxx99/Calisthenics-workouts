@@ -1,0 +1,48 @@
+/* اجعل الجدول قابلاً للتمرير على الشاشات الصغيرة */
+table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+    display: block;
+}
+
+/* تحسين تناسق النصوص والعناصر */
+body {
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* تحسين عرض الجدول على الشاشات الصغيرة */
+@media screen and (max-width: 768px) {
+    th, td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+/* تحسين العرض على الأجهزة الصغيرة جدًا */
+@media screen and (max-width: 480px) {
+    th, td {
+        font-size: 12px;
+        padding: 6px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+}
+
+a {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
